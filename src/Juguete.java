@@ -11,7 +11,7 @@ public class Juguete {
 
     public Juguete(){
       id=0;
-      val_uni= 0;
+      val_uni=0;
       marca="";
       edad_minima=0;
       id_Proveedor=0;
