@@ -21,6 +21,12 @@ public class Mecanico extends Juguete {
         this.complejidad = complejidad;
     }
 
+    public void setValorFinal(float valorUnitario,int complejidad, float valorAdicional) {
+        float valorFinal = valorUnitario + complejidad* valorAdicional;
+        super.setValorFinal(valorFinal);
+
+    }
+
     public Mecanico(
             int id, float val_uni, String marca, int edad_minima,
             int id_Proveedor, float val_adicional, int complejidad) {
