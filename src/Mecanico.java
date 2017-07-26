@@ -4,6 +4,11 @@
 public class Mecanico extends Juguete {
     private int complejidad;
 
+    public float calcularPrecio(){
+      float precio =this.getVal_uni() + this.getVal_adicional()*this.getComplejidad();
+      return precio;
+    }
+
     public int getComplejidad() {
         return complejidad;
     }

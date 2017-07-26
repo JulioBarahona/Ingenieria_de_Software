@@ -3,7 +3,8 @@
  */
 public class Electronico extends Juguete {
 
-    public float precioFinal (){
-        //System.out.println('tes');
-    }
+  public float calcularPrecio(){
+    float precio =this.getVal_uni() + 2*this.getVal_adicional();
+    return precio;
+  }
 }

@@ -10,12 +10,21 @@ public class Juguete {
     private float val_adicional;
 
     public Juguete(){
+<<<<<<< HEAD
         id=0;
         val_uni= 0;
         marca="";
         edad_minima=0;
         id_Proveedor=0;
         val_adicional=0;
+=======
+      id=0;
+      val_uni=0;
+      marca="";
+      edad_minima=0;
+      id_Proveedor=0;
+      val_adicional=0;
+>>>>>>> origin/master
     }
     public Juguete(int id, float val_uni, String marca, int edad_minima, int id_Proveedor, float val_adicional){
         this.id=id;
