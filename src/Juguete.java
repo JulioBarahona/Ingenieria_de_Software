@@ -10,21 +10,22 @@ public class Juguete {
     private float val_adicional;
 
     public Juguete(){
-      id=0;
-      val_uni= 0;
-      marca="";
-      edad_minima=0;
-      id_Proveedor=0;
-      val_adicional=0;
+        id=0;
+        val_uni= 0;
+        marca="";
+        edad_minima=0;
+        id_Proveedor=0;
+        val_adicional=0;
     }
     public Juguete(int id, float val_uni, String marca, int edad_minima, int id_Proveedor, float val_adicional){
-      id=id;
-      val_uni=val_uni;
-      marca=marca;
-      edad_minima=edad_minima;
-      id_Proveedor=id_Proveedor;
-      val_adicional=val_adicional;
+        this.id=id;
+        this.val_uni=val_uni;
+        this.marca=marca;
+        this.edad_minima=edad_minima;
+        this.id_Proveedor=id_Proveedor;
+        this.val_adicional=val_adicional;
     }
+
 
     public int getId() {
         return id;
