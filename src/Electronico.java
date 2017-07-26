@@ -4,6 +4,6 @@
 public class Electronico extends Juguete {
 
     public float precioFinal (){
-        System.out.println('tes');
+        //System.out.println('tes');
     }
 }
