@@ -4,27 +4,22 @@
 public class Juguete {
     private int id;
     private float val_uni;
+    private float valorFinal;
     private String marca;
     private int edad_minima;
     private int id_Proveedor;
     private float val_adicional;
 
     public Juguete(){
-<<<<<<< HEAD
+
         id=0;
         val_uni= 0;
         marca="";
         edad_minima=0;
         id_Proveedor=0;
         val_adicional=0;
-=======
-      id=0;
-      val_uni=0;
-      marca="";
-      edad_minima=0;
-      id_Proveedor=0;
-      val_adicional=0;
->>>>>>> origin/master
+        valorFinal = 0;
+
     }
     public Juguete(int id, float val_uni, String marca, int edad_minima, int id_Proveedor, float val_adicional){
         this.id=id;
@@ -66,6 +61,14 @@ public class Juguete {
 
     public void setEdad_minima(int edad_minima) {
         this.edad_minima = edad_minima;
+    }
+
+    public float getValorFinal() {
+        return valorFinal;
+    }
+
+    public void setValorFinal(float valorFinal) {
+        this.valorFinal = valorFinal;
     }
 
     public float getVal_adicional() {

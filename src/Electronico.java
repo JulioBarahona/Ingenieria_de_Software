@@ -3,8 +3,9 @@
  */
 public class Electronico extends Juguete {
 
-  public float calcularPrecio(){
-    float precio =this.getVal_uni() + 2*this.getVal_adicional();
-    return precio;
-  }
+    @Override
+    public void setValorFinal(float valorFinal) {
+        super.setValorFinal(valorFinal,valoradicional);
+
+    }
 }
