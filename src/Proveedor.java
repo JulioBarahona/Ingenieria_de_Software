@@ -23,7 +23,15 @@ public class Proveedor {
         this.toysManufactured = toysManufactured;
     }
 
-    public void addNewToy(){
+    public void addNewToy(boolean type){
 
+        if (type){
+            Juguete newJuguete = new Mecanico();
+            toysManufactured.add(newJuguete);
+        }
+        else{
+            Juguete newJuguete = new Electronico();
+            toysManufactured.add(newJuguete);
+        }
     }
 }
