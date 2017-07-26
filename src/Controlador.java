@@ -44,14 +44,25 @@ public class Controlador{
       return null;
     }
 
+    public float obtenerJugueteMasCaro(){
+      float precio=0;
+      Juguete buzz= new Juguete();
+      for(Juguete rex: listaJuguete){
+        if(rex instanceof Mecanico){//Juguete Mecanico
+          if(precio<((Mecanico)rex).calcularPrecio()){
+            precio=((Mecanico)rex).calcularPrecio();
+            buzz=rex;
+          }
+        }else if(rex instanceof Electronico){//Juguete Electronico
+          if(precio<((Electronico)rex).calcularPrecio()){
+            precio=((Electronico)rex).calcularPrecio();
+            buzz=rex;
+          }
+        }
+      }
+      return buzz.getId();
+    }
     public void agregarProveedor(){}
 
 
 }
-/*
-        if(woody instanceof Mecanico){//Juguete Mecanico
-          this.listaJuguete.add(woody);
-        }else if(woody instanceof Electronico){//Juguete Electronico
-          this.listaJuguete.add(woody);
-        }
-*/
